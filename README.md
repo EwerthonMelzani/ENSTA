@@ -1,5 +1,5 @@
-# Solved TDs IN102
+# ENSTA Trucs
 
-This is my GitHub Project. I published this project directly from the Visual Studio Code# IN102
+This is my GitHub Project. I published this project directly from the Visual Studio Code#
 
-Ici je vais ecrit tout la solution de les TDs de IN102 , lit le Description s`il vous plait!
+Ici je vais ecrit tout la solution de les TDs de info , lit le Description du repository s`il vous plait!
