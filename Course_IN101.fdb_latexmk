@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1696337802 "/home/charizard/Bureau/Programas/IN102/Course_IN101.tex" "Course_IN101.pdf" "Course_IN101" 1696337802
+["pdflatex"] 1696339189 "/home/charizard/Bureau/Programas/IN102/Course_IN101.tex" "Course_IN101.pdf" "Course_IN101" 1696339189
   "/etc/texmf/web2c/texmf.cnf" 1695212034 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/charizard/Bureau/Programas/IN102/Course_IN101.tex" 1696337802 291 80636f8601282be08bfb4819ecf355a3 ""
+  "/home/charizard/Bureau/Programas/IN102/Course_IN101.tex" 1696339189 332 2c3ac493abb9c53ae2954f1bbb81a47d ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -33,8 +33,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1695212038 125915 807ff72f6023b33a59c427bfd156a3d1 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1695212044 1405648 5b067925c53cb5a82d63de87d161ee0d ""
-  "Course_IN101.aux" 1696337802 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "Course_IN101.tex" 1696337802 291 80636f8601282be08bfb4819ecf355a3 ""
+  "Course_IN101.aux" 1696339189 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "Course_IN101.tex" 1696339189 332 2c3ac493abb9c53ae2954f1bbb81a47d ""
   (generated)
   "Course_IN101.aux"
   "Course_IN101.log"
