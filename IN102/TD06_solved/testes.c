@@ -17,21 +17,62 @@ void affichage(struct intervale choisi){
 struct intervale saisie_intervalle(void){
 
     int i,j;
-    scanf(&i,&j);
+    scanf(" [%d,%d]",&i,&j);
 
     struct intervale b = {i,j};
-    
     return b;
+
 };
+
+
+struct intervale intersection(struct intervale* choisi1,struct intervale* choisi2){
+
+    int inf,sup;
+
+    if(choisi1->inf_ter>choisi2->inf_ter){
+
+        inf = choisi1->inf_ter;
+
+    }else{
+
+        inf = choisi2->inf_ter;
+
+    }
+    
+    
+    if(choisi1->sup_ter>choisi2->sup_ter){
+
+
+        sup = choisi2->sup_ter;
+    }else{
+
+        sup = choisi1->sup_ter;
+    }
+
+    struct intervale b = {inf,sup};
+
+
+    return b;
+
+};
+
 
 int main(void){
 
-    struct intervale premiere = {-3,5};
-    struct intervale deuxieme = {-1,9};
+    struct intervale a={-1,9};
+    struct intervale b={-3,5};
+    struct intervale c;
+
     
-    affichage(premiere);
-    affichage(deuxieme);
-    
+
+    affichage(b);
+
+    affichage(a);
+
+    c = intersection(&b,&a);
+
+    printf("L`interval de intersection est = [%d,%d]\n",c.inf_ter,c.sup_ter);
+
 
     return 0;
 };
