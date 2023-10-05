@@ -1,4 +1,7 @@
+
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 struct intervale{
 
@@ -56,22 +59,33 @@ struct intervale intersection(struct intervale* choisi1,struct intervale* choisi
 
 };
 
+struct intervale* saisie_tableau(int N){
+
+    struct intervale* tableau = malloc(sizeof(struct intervale)*N);
+
+    for(int i=0;i<N;i+=1){
+
+        tableau[i] = saisie_intervalle();
+
+    }
+
+    return tableau;
+
+}
+
 
 int main(void){
 
-    struct intervale a={-1,9};
-    struct intervale b={-3,5};
-    struct intervale c;
+    int n;
 
-    
+    scanf("%d",&n);
 
-    affichage(b);
+    struct intervale* a = saisie_tableau(n);
 
-    affichage(a);
+    for(int i = 0;i<n;i+=1){
+        printf("%d,%d",a[i].inf_ter,a[i].sup_ter);
+    }
 
-    c = intersection(&b,&a);
-
-    printf("L`interval de intersection est = [%d,%d]\n",c.inf_ter,c.sup_ter);
 
 
     return 0;
