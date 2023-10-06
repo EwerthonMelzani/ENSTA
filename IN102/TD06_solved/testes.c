@@ -71,8 +71,39 @@ struct intervale* saisie_tableau(int N){
 
     return tableau;
 
-}
+};
 
+struct intervale intersection_tableau(struct intervale* c,int n){
+
+    struct intervale itx;
+
+    if(n>1){
+
+        for(int i=0;i<n-1;i+=1){
+
+            if(i==0){
+
+                itx = intersection(&c[0],&c[1]);
+
+            }
+
+            itx = intersection(&itx,&c[i+1]);
+
+        }
+
+
+        return itx;
+
+    }else{
+
+        itx.inf_ter = c[0].inf_ter;
+        itx.sup_ter = c[0].sup_ter;
+
+        return itx;
+    }
+
+
+};
 
 int main(void){
 
@@ -80,12 +111,16 @@ int main(void){
 
     scanf("%d",&n);
 
+    struct intervale b;
     struct intervale* a = saisie_tableau(n);
 
     for(int i = 0;i<n;i+=1){
-        printf("%d,%d",a[i].inf_ter,a[i].sup_ter);
+        printf("[%d,%d]\n",a[i].inf_ter,a[i].sup_ter);
     }
 
+    b=intersection_tableau(a,n);
+
+    printf("c`est intersection [%d,%d]\n",b.inf_ter,b.sup_ter);
 
 
     return 0;
