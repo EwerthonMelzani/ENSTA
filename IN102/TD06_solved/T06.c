@@ -100,7 +100,6 @@ struct intervale saisie_intervalle(void){
 Q5:
 
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -173,64 +172,35 @@ struct intervale* saisie_tableau(int N){
 
     return tableau;
 
-};
+}
 
-struct intervale intersection_tableau(struct intervale* c,int n){
-
-    struct intervale itx;
-
-    if(n>1){
-
-        for(int i=0;i<n-1;i+=1){
-
-            if(i==0){
-
-                itx = intersection(&c[0],&c[1]);
-
-            }
-
-            itx = intersection(&itx,&c[i+1]);
-
-        }
-
-
-        return itx;
-
-    }else{
-
-        itx.inf_ter = c[0].inf_ter;
-        itx.sup_ter = c[0].sup_ter;
-
-        return itx;
-    }
-
-
-};
-
-void affichage_tableau_inverse(struct intervale* a,int n){
-
-    for(int i = n-1;i>=0;i-=1){
-
-        printf("[%d,%d]",a[i].inf_ter,a[i].sup_ter);
-
-
-    }
-
-};
 
 int main(void){
 
-    struct intervale a={-1,9};
-    struct intervale b={-3,5};
+    struct intervale a;
+    struct intervale b;
     struct intervale c;
 
-    c = intersection(&a,&b);
 
-    affichage(c);
-    
-    
+    a = saisie_intervalle();
+
+    printf("\n");
+
+    b = saisie_intervalle();
+
+
+    affichage(b);
+
+    affichage(a);
+
+    c = intersection(&b,&a);
+
+    printf("L`interval de intersection est = [%d,%d]\n",c.inf_ter,c.sup_ter);
+
+
     return 0;
 };
+
 
 
 

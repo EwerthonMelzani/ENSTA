@@ -105,23 +105,27 @@ struct intervale intersection_tableau(struct intervale* c,int n){
 
 };
 
-int main(void){
+void affichage_tableau_inverse(struct intervale* a,int n){
 
-    int n;
+    for(int i = n-1;i>=0;i-=1){
 
-    scanf("%d",&n);
+        printf("[%d,%d]",a[i].inf_ter,a[i].sup_ter);
 
-    struct intervale b;
-    struct intervale* a = saisie_tableau(n);
 
-    for(int i = 0;i<n;i+=1){
-        printf("[%d,%d]\n",a[i].inf_ter,a[i].sup_ter);
     }
 
-    b=intersection_tableau(a,n);
+};
 
-    printf("c`est intersection [%d,%d]\n",b.inf_ter,b.sup_ter);
+int main(void){
 
+    struct intervale a={-1,9};
+    struct intervale b={-3,5};
+    struct intervale c;
 
+    c = intersection(&a,&b);
+
+    affichage(c);
+    
+    
     return 0;
 };
