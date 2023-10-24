@@ -1,4 +1,4 @@
-/* Jeanne LAGAFFE */
+/*Ewerthon Araújo Melzani*/
 #include <stdio.h>
 int main() { printf("Hello World !!\n"); }
 
