@@ -145,6 +145,7 @@ int main(void) {
     printf("\n");
   }
 
+  free(i);
   
   return 0;
 

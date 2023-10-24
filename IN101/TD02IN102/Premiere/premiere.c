@@ -48,10 +48,12 @@ void affichage_quotient(int a,int b,int n){
 
 int main(){
 
-    int a,b;
+    int a,b,c;
 
-    scanf("%d%d",&a,&b);
+    c = scanf("%c%c",&a,&b);
+    if(c!=2){
 
+    }
     affichage_quotient(a,b,3);
 
 
