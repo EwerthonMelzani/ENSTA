@@ -4,7 +4,6 @@
 
 void affichage_quotient(int a,int b,int n){
     int rest;
-    printf("%d\n",b);
     if(b==0){
         printf("Ce diviseur est pas valide");
     }else{
@@ -50,11 +49,10 @@ int main(){
 
     int a,b,c;
 
-    c = scanf("%c%c",&a,&b);
-    if(c!=2){
-
+    c = scanf("%d%d",&a,&b);
+    if(c==2){
+        affichage_quotient(a,b,3);
     }
-    affichage_quotient(a,b,3);
 
 
     return 0;
